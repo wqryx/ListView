@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
                                 radioButton_pulsado.setChecked(false);
                             }
                             radioButton_pulsado = (RadioButton) v;
-                            texto.setText("MARCADA UNA OPCIÓN");
+                            Encapsulador encapsulador = (Encapsulador) entrada;
+                            texto.setText("MARCADA LA OPCIÓN: " + encapsulador.get_textoTitulo());
                         }
                     });
                 }
